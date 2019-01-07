@@ -9,10 +9,22 @@ AWS.config.credentials = creds;
 
 const sts = new AWS.STS();
 
+const notifier = require('node-notifier');
 sts.getCallerIdentity().promise()
 .then(data => {
-    console.log(`You are logged in as ${data.Arn}`);
+    var message = `You are logged in as ${data.Arn}`;
+    console.log(message);
+    notifier.notify({
+        title: 'AWS Credentials',
+        message: message
+    });
 })
 .catch(err => {
     console.log(`You are not logged in under the ${profile_name} profile.`);
+    notifier.notify({
+        title: 'AWS Credentials',
+        message: 'You are not logged in.'
+    });
 });
+
+

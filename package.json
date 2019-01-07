@@ -1,6 +1,6 @@
 {
   "name": "aws-whoami",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A simple nodeJS app to show which user you're logged in as.",
   "main": "cli.js",
   "bin": {
@@ -10,6 +10,7 @@
   "repository": "https://github.com/andylockran/aws-whoami",
   "license": "Apache-2.0",
   "dependencies": {
-    "aws-sdk": "^2.384.0"
+    "aws-sdk": "^2.384.0",
+    "node-notifier": "^5.3.0"
   }
 }
