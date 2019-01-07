@@ -1,0 +1,14 @@
+{
+  "name": "aws-whoami",
+  "version": "0.0.1",
+  "description": "A simple nodeJS app to show which user you're logged in as.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm tset"
+  },
+  "author": "Andy Loughran",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "aws-sdk": "^2.384.0"
+  }
+}
