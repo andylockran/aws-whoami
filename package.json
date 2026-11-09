@@ -10,7 +10,7 @@
   "repository": "https://github.com/andylockran/aws-whoami",
   "license": "Apache-2.0",
   "dependencies": {
-    "aws-sdk": "^2.384.0",
-    "node-notifier": ">=8.0.1"
+    "@aws-sdk/client-sts": "^3.1165.0",
+    "node-notifier": "^12.1.0"
   }
 }
